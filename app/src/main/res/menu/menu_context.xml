@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/contextMenu" android:checkableBehavior="none">
+        <item android:id="@+id/green" android:orderInCategory="0" android:title="绿"/>
+        <item android:id="@+id/red" android:orderInCategory="0" android:title="红"/>
+        <item android:id="@+id/blue" android:orderInCategory="0" android:title="蓝"/>
+        <item android:id="@+id/childMenu" android:orderInCategory="0" android:title="子菜单演示">
+            <menu>
+                <group android:id="@+id/subMenu" android:checkableBehavior="none">
+                    <item android:id="@+id/footBall" android:title="足球"/>
+                    <item android:id="@+id/basketBall" android:title="篮球"/>
+                    <item android:id="@+id/ymBall" android:title="羽毛球"/>
+                </group>
+            </menu>
+        </item>
+    </group>
+</menu>
